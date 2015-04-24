@@ -1,0 +1,62 @@
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<title>Assuntos</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="scriptDynamicList.js"></script>
+	</head>
+	<body style= "background : #C0C0C0">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Sistemas de Informação</a>
+			</div>
+			<div>
+			  <ul class="nav navbar-nav">
+				<li><a href= index.html>Por que Estudar Sistemas de Informação?</a></li>
+				<li><a href= signup.html>Cadastro</a></li>
+				<li class="active"><a href= '#'>Assuntos</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div style = "align-items: center; text-align: center; display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;">
+			<div  class="panel panel-info" style = 'width : 400px; padding : 5px'>
+				<label for="todo">Assuntos não aprendidos:</label>
+				<ul class="list-group" id = 'ToDo'>
+				</ul>
+				<form>
+				<button type="button" class="btn btn-default" onclick= "swipeList()">Passar para concluido</button>
+				<button type="button" class="btn btn-default" onclick= "removeItem()">Remover</button>
+				</form>
+			</div>
+			<div  class="panel panel-info" style = 'width : 400px; padding : 5px; margin-left : 20px'>
+				<label for="todo">Assuntos aprendidos:</label>
+				<ul class="list-group" id = 'done'>
+				</ul>
+			</div>
+		</div>
+		<div style = "align-items: center; text-align: center; display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;">
+			<div  class="panel panel-info" style = 'width : 400px; padding : 5px'>
+				<form role="form">
+					<div class="form-group">
+						<label for="email">Novo Assunto:</label>
+						<input type="text" class="form-control" id="task">
+					</div>
+					<button type="button" onclick="addOnToDo()" class="btn btn-default">Submit</button>
+				</form>
+				<form method=”link” action= index.html style="text-align: center; margin-top: 20px">
+					<button type="button" onclick="addOnToDo('fsdaf')" class="btn btn-success">Voltar ao inicio</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

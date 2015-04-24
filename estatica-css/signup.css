@@ -1,0 +1,20 @@
+body {
+	background : #BFEFFF;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+    font-size: 150%;
+	color: #517693;
+	font-weight: bold;
+}
+
+div {
+    vertical-align: middle;
+	width: 50%;
+    border-radius: 15px 50px 30px;
+	border: 2px solid #63B8FF;
+    background: #236B8E;
+    padding: 5px;
+}

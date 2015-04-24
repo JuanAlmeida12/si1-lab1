@@ -1,0 +1,11 @@
+body {
+	background : #BFEFFF;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+    font-size: 150%;
+	color: #517693;
+	font-weight: bold;
+}
