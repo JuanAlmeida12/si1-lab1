@@ -20,6 +20,16 @@ $(document).ready(function(){
 	});
 })
 
+$(document).ready(function(){
+	$("#task").keypress(function (e) {
+		
+		if(e.which == '13') {
+			addOnToDo();
+			e.preventDefault();
+		}
+	});
+})
+
 function swipeList() {
 	if (lastItemClicked != null) {
 		var li = '<li class="list-group-item">' + lastItemClicked.text() + '</li>';
